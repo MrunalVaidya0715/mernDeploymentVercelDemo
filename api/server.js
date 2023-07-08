@@ -5,6 +5,9 @@ const app = express();
 app.use('/',(req, res)=>{
     res.status(200).send("Welcome")
 })
+app.use('/sec',(req, res)=>{
+    res.status(200).send("Welcome Second")
+})
 
 app.use('/api/test/',(req, res)=>{
     res.status(200).send("Hello")
