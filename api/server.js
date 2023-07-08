@@ -2,6 +2,10 @@ import express from 'express'
 import testRoute from './routes/test.js'
 const app = express();
 
+app.use('/',(req, res)=>{
+    res.status(200).send("Welcome")
+})
+
 app.use('/api/test/',(req, res)=>{
     res.status(200).send("Hello")
 })
