@@ -1,5 +1,5 @@
 import express from 'express'
-import testRoute from './routes/test.js'
+import testRoute from './routes/route.js'
 const app = express();
 
 app.use('/',(req, res)=>{
